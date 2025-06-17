@@ -1,0 +1,17 @@
+An array is an ordered collection of contiguous elements, for example [1,3,5] even though computers only understand data in terms of bits such as ones and zeroes.
+
+A byte is 8 bits and abit is a positon that can store a digit and the restriction is that it must be a zero or one. _ _ _ _ _ _ _ _ is 8 empty bits which make a BYTE.
+
+RAM = Random Access Memory.
+
+The integer 1 in the arrayn is represented asd 4 bytes which are 32 bits.
+Values are stored at a distinct location which is known as an address. Each value in the array takes 4 bytes therefore the address increments by 4 for easch value in the array.
+
+Characters are also stored contiguosly. The difference is characters take only one byte compared to digits.
+
+Key notes:
+- A GB is 10^9 bytes
+- A byte of RAM is exactly 8 bits.
+
+
+Each value in the [1,3,5] has a binary representation, the first task is to write a program that converts integers in an arrrau into its binary rperesentation.
