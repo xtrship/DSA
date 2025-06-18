@@ -1,0 +1,39 @@
+DYNAMIC ARRAYS
+Dynamic Arrays are a much more common alternative to static arrays. They are useful because they can grow as elements are added. In JavaScript and Python, these are the default arrays.
+
+Unlike static arrays, with dynamic arrays we don’t have to specify a size upon initialization.
+
+
+Insert n in the last position of the array
+pushback(n) {
+    // 1. Check if array is at full capacity
+    if (this.length == this.capacity) {
+        // 2. Double the array size if needed
+        this.resize();
+    }
+    // 3. Insert element at the next empty position
+    this.arr[this.length] = n;
+    // 4. Update the count of elements
+    this.length++;
+}
+
+
+
+RESIZING DYNAMIC ARRAYS
+resize() {
+    // 1. Double the capacity
+    this.capacity = 2 * this.capacity;
+
+    // 2. Create new array with doubled size
+    const newArr = new Array(this.capacity);
+
+    // 3. Copy all existing elements to the new array
+    for (let i = 0; i < this.length; i++) {
+        newArr[i] = this.arr[i];
+    }
+
+    // 4. Replace old array with new one
+    this.arr = newArr;
+}
+
+
