@@ -43,4 +43,57 @@ for(let ex of x){
     }
 }
 
+// ALL OF THE LOOPS
+
+// Normal for loop
+
+for (let step = 0; step < 5; step++) {
+  // Runs 5 times, with values of step 0 through 4.
+  console.log("Walking east one step");
+}
+
+// Do while loop
+let i = 1;
+
+do {
+    i*=4;
+    console.log(i);
+} while(i < 32);
+
+// Simple while loop
+let x = 5;
+
+while(x>3){
+    console.log(x);
+    x--;
+}
+
+// Break can be used to terminate a loop if a condition is true
+
+// Continue works as like a skip button;
+
+// The for...in loop is great for iteratign through properties of an object
+
+// Fix 1: Correct the property name and array structure
+const carCollection = {
+    Cars: ['Lamborghini 360', 'Audi R8', '720s'],
+    Trucks: ['Ford F-150', 'Ram 1500']
+};
+
+// Fix 2: Use correct property name (capital C)
+for(const i in carCollection.Cars){
+    console.log(i);                    // Prints indices: 0, 1, 2
+    console.log(carCollection.Cars[i]); // Prints car names
+}
+
+// Loop through object properties
+for(const property in carCollection){
+    console.log(property + ':', carCollection[property]);
+}
+// Output:
+// Cars: ['Lamborghini 360', 'Audi R8', '720s']
+// Trucks: ['Ford F-150', 'Ram 1500']
+
+for...in gives you indices/keys (0, 1, 2 for arrays)
+for...of gives you values directly ('Lamborghini 360', 'Audi R8', '720s')
 
