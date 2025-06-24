@@ -1,0 +1,8 @@
+A stack is just an array, its easier to think of stacks as a vertical alignment of an array.
+
+Popping removes the last item of the array and pushing adds to the beginning. Stacks are considered Last in first out.
+
+PUSH
+The push operation adds an element to the top of the stack, which in dynamic array terms would be appending an element to the end. This is an efficient O(1) operation as discussedin the previous lesson. It helps to visualize a stack as an array that is vertical. The pseudocode demonstrates the concept, along with the visual where we add the integers 1 through 4 to the top. The top pointer updates to point at the last item added. The following pseudocode and visual demonstrates this.
+
+

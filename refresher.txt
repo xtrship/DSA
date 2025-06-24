@@ -1,0 +1,46 @@
+Data Type Conversion in JS
+let x = 42;
+
+let a = 'I am ';
+
+console.log(a + x);  // 'I am 42' ends up being the output, the int variable is converted to a string
+
+You can convert numbers to a string with the + assignment variable or using the String() function which creates a string object, whereas a is a primitive string and therefore are not equal. If you use toString() function however then that will convert the data type to a primitive string. You can aslo use concatenate no strings with an empty string to create a primitive string such as below:
+
+let x = 42;
+
+let a = 'I am ';
+
+console.log(typeof x + a); // returns string 
+
+SWITCH STATEMENT REFRESHER
+
+let x = [1,2,3,4,5,6,7,8,9];
+
+for(let ex of x){
+    console.log(ex);
+
+    if(ex === 5){
+        switch(ex){
+            case 1:
+                console.log('Not 5');
+                break;
+            case 2:
+                console.log('Not 5');
+                break;
+            case 3:
+                console.log('Not 5');
+                break;
+            case 4:
+                console.log('Not 5');
+                break;
+            case 5:
+                console.log(`^ ${ex} IS HERE`);
+                break;
+            default:
+            console.log(`Where is ${ex}?`);
+        }
+    }
+}
+
+
